@@ -22,13 +22,16 @@ export default function Header() {
       <div className="flex items-center justify-between px-4 py-4 max-w-7xl mx-auto">
         <div className="flex items-center space-x-4">
           <Link href="/" aria-label="Home">
-            <Image
-              src="/assets/images/sTUDIO WALL.png"
-              alt="logo"
-              width={120}
-              height={40}
-              priority
-            />
+          <Image
+    src="/assets/images/sTUDIO WALL.png"
+    alt="logo"
+    width={120}
+    height={40}
+    priority
+    sizes="(max-width: 768px) 100px, (max-width: 1200px) 120px, 150px"
+    loading="eager"
+    className="w-auto h-auto"
+  />
           </Link>
         </div>
 
