@@ -17,8 +17,8 @@ export default function Footer() {
             </div>
 
             <div className="max-w-4xl mx-auto text-center px-6 py-20">
-                <h4 className="uppercase text-sm tracking-wide mb-2">Stay in the know</h4>
-                <p className="text-lg font-medium mb-8">
+                <h4 className="uppercase font-resotho text-sm tracking-wide mb-2">Stay in the know</h4>
+                <p className="text-lg font-lato font-medium mb-8">
                     Exclusive Insights & Anticipated Events
                 </p>
 
@@ -45,8 +45,8 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6 py-16 text-sm text-center md:text-left">
                 <div>
-                    <h5 className="font-medium mb-2">ADDRESS</h5>
-                    <p>
+                    <h5 className="font-medium font-resotho mb-2">ADDRESS</h5>
+                    <p className="font-lato">
                         MAK Management <br />
                         Carrer de s’Espartar, 4 <br />
                         07800 Ibiza <br />
@@ -55,23 +55,23 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h5 className="font-medium mb-2">MATTHIAS KLINGLER</h5>
-                    <p>
+                    <h5 className="font-medium font-resotho mb-2">MATTHIAS KLINGLER</h5>
+                    <p className="font-lato">
                         matthias@mak-management.com <br />
                         +43 676 50 60 50 4
                     </p>
                 </div>
 
                 <div>
-                    <h5 className="font-medium mb-2">ANNA SAGI</h5>
-                    <p>
+                    <h5 className="font-medium font-resotho mb-2">ANNA SAGI</h5>
+                    <p className="font-lato">
                         anna@mak-management.com <br />
                         +43 676 50 60 50 7
                     </p>
                 </div>
 
                 <div>
-                    <h5 className="font-medium mb-2">SOCIAL MEDIA</h5>
+                    <h5 className="font-medium font-resotho mb-2">SOCIAL MEDIA</h5>
                     <ul>
                         <li>
                             <a href="#" className="hover:underline">
@@ -93,8 +93,8 @@ export default function Footer() {
             </div>
 
             <div className="border-t border-black/30 py-4 text-xs px-6 flex flex-col md:flex-row justify-between items-center">
-                <p>© 2024 MAK Management GmbH</p>
-                <div className="flex space-x-4 mt-2 md:mt-0">
+                <p className="font-lato">© 2024 MAK Management GmbH</p>
+                <div className="font-lato flex space-x-4 mt-2 md:mt-0">
                     <a href="#" className="hover:underline">
                         Privacy Policy
                     </a>

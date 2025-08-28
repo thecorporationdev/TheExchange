@@ -75,7 +75,7 @@ export default function Header() {
                   <X size={28} />
                 </button>
               </div>
-              <nav className="flex flex-col items-center space-y-6 p-8 text-lg font-medium">
+              <nav className="flex font-lato flex-col items-center space-y-6 p-8 text-lg font-medium">
                 <a href="#" onClick={() => setOpen(false)}>Agence</a>
                 <a href="#" onClick={() => setOpen(false)}>Services</a>
                 <a href="#" onClick={() => setOpen(false)}>Projets</a>

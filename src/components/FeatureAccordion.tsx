@@ -66,8 +66,8 @@ const FeatureCard = ({
         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
         transition={{ duration: 0.6, delay: index * 0.3 }}
       >
-        <h3 className="text-3xl font-bold">{feature.title}</h3>
-        <p className="uppercase text-sm text-gray-500 mt-1">
+        <h3 className="text-3xl font-resotho font-bold">{feature.title}</h3>
+        <p className="uppercase text-sm font-lato text-gray-500 mt-1">
           {feature.subtitle}
         </p>
 
@@ -78,7 +78,7 @@ const FeatureCard = ({
             inView ? { opacity: 1, height: "auto" } : { opacity: 0, height: 0 }
           }
           transition={{ duration: 0.6, delay: index * 0.4 }}
-          className="text-gray-600 dark:text-gray-300 mt-3 text-base leading-relaxed overflow-hidden"
+          className="text-gray-600 font-lato dark:text-gray-300 mt-3 text-base leading-relaxed overflow-hidden"
         >
           {feature.description}
         </motion.p>
@@ -108,7 +108,7 @@ const Features = () => {
     <section className="w-full py-16 space-y-12 bg-white">
       {/* Right-aligned heading */}
       <div className="w-full text-left px-6">
-        <h2 className="text-5xl md:text-7xl font-extrabold tracking-wide uppercase text-gray-900">
+        <h2 className="text-5xl font-resotho md:text-7xl font-extrabold tracking-wide uppercase text-gray-900">
           Our Features
         </h2>
       </div>
