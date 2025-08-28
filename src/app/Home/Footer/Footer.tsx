@@ -1,15 +1,20 @@
-"use client";
 // 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
+"use client";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
     return (
         <footer className="bg-[#fe0000] text-black relative">
             <div className="w-full text-center py-8 px-4">
-  <h1 className="text-black text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold tracking-wide uppercase leading-tight">
-    MAK MANAGEMENT
-  </h1>
-</div>
+                <Image
+                    src="/assets/images/sTUDIO WALL (1).png"
+                    alt="MAK Management Logo"
+                    width={300}
+                    height={100}
+                    className="mx-auto h-auto"
+                />
+            </div>
 
             <div className="max-w-4xl mx-auto text-center px-6 py-20">
                 <h4 className="uppercase text-sm tracking-wide mb-2">Stay in the know</h4>

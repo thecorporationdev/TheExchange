@@ -9,19 +9,25 @@ const features = [
   {
     id: 1,
     title: "Kubota",
-    description: "MANUFACTURING & INDUSTRIAL",
+    subtitle: "MANUFACTURING & INDUSTRIAL",
+    description:
+      "Kubota specializes in innovative manufacturing and industrial solutions, delivering reliable machinery across the globe.",
     image: "/images/feature1.png",
   },
   {
     id: 2,
     title: "Spafax",
-    description: "INFLIGHT & MEDIA",
+    subtitle: "INFLIGHT & MEDIA",
+    description:
+      "Spafax provides premium inflight entertainment and media experiences that connect global audiences with engaging content.",
     image: "/images/feature2.png",
   },
   {
     id: 3,
     title: "Ether Capital",
-    description: "FINTECH",
+    subtitle: "FINTECH",
+    description:
+      "Ether Capital focuses on digital assets and blockchain innovation, bridging traditional finance with decentralized systems.",
     image: "/images/feature3.png",
   },
 ];
@@ -61,9 +67,21 @@ const FeatureCard = ({
         transition={{ duration: 0.6, delay: index * 0.3 }}
       >
         <h3 className="text-3xl font-bold">{feature.title}</h3>
-        <p className="uppercase text-sm text-gray-500 mt-2">
-          {feature.description}
+        <p className="uppercase text-sm text-gray-500 mt-1">
+          {feature.subtitle}
         </p>
+
+        {/* Accordion description */}
+        <motion.p
+          initial={{ opacity: 0, height: 0 }}
+          animate={
+            inView ? { opacity: 1, height: "auto" } : { opacity: 0, height: 0 }
+          }
+          transition={{ duration: 0.6, delay: index * 0.4 }}
+          className="text-gray-600 dark:text-gray-300 mt-3 text-base leading-relaxed overflow-hidden"
+        >
+          {feature.description}
+        </motion.p>
       </motion.div>
 
       {/* Right: Image */}
