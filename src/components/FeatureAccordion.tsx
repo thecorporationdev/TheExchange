@@ -12,7 +12,7 @@ const features = [
     subtitle: "MANUFACTURING & INDUSTRIAL",
     description:
       "Kubota specializes in innovative manufacturing and industrial solutions, delivering reliable machinery across the globe.",
-    image: "/images/feature1.png",
+    image: "/assets/images/hero1.jpg",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const features = [
     subtitle: "INFLIGHT & MEDIA",
     description:
       "Spafax provides premium inflight entertainment and media experiences that connect global audiences with engaging content.",
-    image: "/images/feature2.png",
+    image: "/assets/images/hero2.jpg",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const features = [
     subtitle: "FINTECH",
     description:
       "Ether Capital focuses on digital assets and blockchain innovation, bridging traditional finance with decentralized systems.",
-    image: "/images/feature3.png",
+    image: "/assets/images/hero3.webp",
   },
 ];
 
@@ -105,7 +105,14 @@ const FeatureCard = ({
 
 const Features = () => {
   return (
-    <section className="w-full py-16 space-y-12 bg-white dark:bg-gray-900">
+    <section className="w-full py-16 space-y-12 bg-white">
+      {/* Right-aligned heading */}
+      <div className="w-full text-left px-6">
+        <h2 className="text-5xl md:text-7xl font-extrabold tracking-wide uppercase text-gray-900">
+          Our Features
+        </h2>
+      </div>
+
       <div className="flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} feature={feature} index={index} />
