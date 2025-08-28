@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <Link href="/" aria-label="Home">
             <Image
-              src="/assets/svgs/LOGO (2).svg"
+              src="/assets/images/sTUDIO WALL.png"
               alt="logo"
               width={120}
               height={40}
