@@ -82,7 +82,7 @@ const FeatureCard = ({
         </motion.p>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         className="w-full md:w-1/2"
         initial={{ scale: 0.9 }}
         animate={inView ? { scale: 1 } : { scale: 0.9 }}
@@ -95,7 +95,21 @@ const FeatureCard = ({
           height={400}
           className="rounded-md object-cover w-full h-28 md:h-32"
         />
-      </motion.div>
+      </motion.div> */}
+      <motion.div
+  className="w-full md:w-1/2 overflow-hidden"
+  initial={{ height: 100, opacity: 0 }}
+  animate={inView ? { height: 250, opacity: 1 } : { height: 100, opacity: 0 }}
+  transition={{ duration: 0.8, ease: "easeInOut", delay: index * 0.2 }}
+>
+  <Image
+    src={feature.image}
+    alt={feature.title}
+    width={1200}
+    height={400}
+    className="rounded-md object-cover w-full h-full"
+  />
+</motion.div>
     </motion.div>
   );
 };

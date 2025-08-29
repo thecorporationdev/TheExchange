@@ -1,11 +1,19 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
     <section className="w-full bg-gray-50 py-16 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-        <div className="flex-1 text-left">
+        
+        <motion.div
+          className="flex-1 text-left"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ amount: 0.2 }} 
+        >
           <h4 className="text-xs font-semibold tracking-widest text-gray-500 uppercase">
             About
           </h4>
@@ -17,18 +25,24 @@ export default function AboutSection() {
             Now, we’re harnessing this cargo of expertise to propel your next
             project.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="flex-1 w-full flex justify-center lg:justify-end">
+        <motion.div
+          className="flex-1 w-full flex justify-center lg:justify-end"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ amount: 0.2 }} 
+        >
           <Image
-            src="/assets/images/OIP.webp" 
+            src="/assets/images/OIP.webp"
             alt="Crafted for success container"
             width={700}
             height={400}
             className="w-full max-w-lg h-auto object-contain"
             priority
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

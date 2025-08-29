@@ -16,25 +16,25 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 5000); // slower fade for elegance
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0">
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           <motion.div
             key={index}
-            initial={{ scale: 1.2, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
             className="absolute inset-0"
           >
             <Image
               src={images[index]}
-              alt="Hero background"
+              alt={`Hero background ${index}`}
               fill
               priority
               className="object-cover"
@@ -45,20 +45,41 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-0">
-      <hr className="w-full border-t-1 border-white mt-6" />
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+        <motion.hr
+          className="w-full border-t border-white mt-6"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+        />
 
-        <h1 className="text-5xl  md:text-7xl font-bold leading-tight font-resotho">
+        <motion.h1
+          className="text-5xl md:text-7xl font-bold leading-tight font-resotho mt-6"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+        >
           High-end <br />{" "}
-          <span className="text-6xl  md:text-8xl font-resotho">Design + Build</span>
-        </h1>
+          <span className="text-6xl md:text-8xl font-resotho">
+            Design + Build
+          </span>
+        </motion.h1>
 
-        <hr className="w-full border-t-1 border-white my-6" />
+        <motion.hr
+          className="w-full border-t border-white my-6"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+        />
 
-        <p className="text-lg md:text-2xl max-w-3xl">
+        <motion.p
+          className="text-lg md:text-2xl max-w-3xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 1.3 }}
+        >
           for elevated living – Residential, Adaptive, and Wellness spaces
-        </p>
-
+        </motion.p>
       </div>
     </section>
   );
