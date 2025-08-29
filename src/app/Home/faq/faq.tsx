@@ -88,17 +88,27 @@ export default function CoffeeAccordion() {
               <span>{coffee.type}</span>
             </div>
 
-            {/* Toggle Button */}
-            <button
-              onClick={() => toggleAccordion(coffee.id)}
-              className="ml-auto flex items-center justify-center w-10 h-10 rounded-full border border-gray-400"
-            >
-              {openId === coffee.id ? (
-                <ChevronUpIcon className="w-5 h-5" />
-              ) : (
-                <ChevronDownIcon className="w-5 h-5" />
-              )}
-            </button>
+{/* Toggle Button */}
+<button
+  onClick={() => toggleAccordion(coffee.id)}
+  className={`ml-auto flex items-center justify-center transition-all duration-300 ${
+    openId === coffee.id
+      ? "w-10 h-10 rounded-full bg-black text-white"
+      : "w-12 h-6 rounded-full border border-black bg-white relative"
+  }`}
+>
+  {openId === coffee.id ? (
+    <span className="text-lg font-bold">×</span>
+  ) : (
+    <>
+      <span className="text-lg font-bold absolute right-2 text-black">+</span>
+      <span className="w-6 h-6 rounded-full bg-black absolute left-0" />
+    </>
+  )}
+</button>
+
+
+
           </div>
 
           {/* Accordion Content with Animation */}
