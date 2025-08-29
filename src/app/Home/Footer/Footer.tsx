@@ -17,8 +17,8 @@ export default function Footer() {
             </div>
 
             <div className="max-w-4xl mx-auto text-center px-6 py-20">
-                <h4 className="uppercase font-resotho text-sm tracking-wide mb-2">Stay in the know</h4>
-                <p className="text-lg font-lato font-medium mb-8">
+                <h4 className="uppercase font-resotho text-sm tracking-wide mb-2 font-resotho">Stay in the know</h4>
+                <p className="text-lg font-medium mb-8 font-resotho">
                     Exclusive Insights & Anticipated Events
                 </p>
 
@@ -46,7 +46,7 @@ export default function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6 py-16 text-sm text-center md:text-left">
                 <div>
                     <h5 className="font-medium font-resotho mb-2">ADDRESS</h5>
-                    <p className="font-lato">
+                    <p className="font-resotho">
                         MAK Management <br />
                         Carrer de s’Espartar, 4 <br />
                         07800 Ibiza <br />
@@ -55,7 +55,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h5 className="font-medium font-resotho mb-2">MATTHIAS KLINGLER</h5>
+                    <h5 className="font-medium font-resotho mb-2 font-resotho">MATTHIAS KLINGLER</h5>
                     <p className="font-lato">
                         matthias@mak-management.com <br />
                         +43 676 50 60 50 4

@@ -55,36 +55,33 @@ const FeatureCard = ({
       }
       transition={{
         duration: 0.6,
-        delay: index * 0.2, // staggered animation
+        delay: index * 0.2,
       }}
       className="overflow-hidden border-b border-gray-300 dark:border-gray-700 pb-6 flex flex-col md:flex-row items-start justify-between gap-6 w-full"
     >
-      {/* Left: Text */}
       <motion.div
         className="w-full md:w-1/2 text-left px-4 md:px-8"
         initial={{ opacity: 0, x: -30 }}
         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
         transition={{ duration: 0.6, delay: index * 0.3 }}
       >
-        <h3 className="text-3xl font-resotho font-bold">{feature.title}</h3>
-        <p className="uppercase text-sm font-lato text-gray-500 mt-1">
+        <h3 className="text-3xl font-bold font-resotho">{feature.title}</h3>
+        <p className="uppercase text-sm text-gray-500 mt-1 font-resotho">
           {feature.subtitle}
         </p>
 
-        {/* Accordion description */}
         <motion.p
           initial={{ opacity: 0, height: 0 }}
           animate={
             inView ? { opacity: 1, height: "auto" } : { opacity: 0, height: 0 }
           }
           transition={{ duration: 0.6, delay: index * 0.4 }}
-          className="text-gray-600 font-lato dark:text-gray-300 mt-3 text-base leading-relaxed overflow-hidden"
+          className="text-gray-600  dark:text-gray-300 mt-3 text-base leading-relaxed overflow-hidden"
         >
           {feature.description}
         </motion.p>
       </motion.div>
 
-      {/* Right: Image */}
       <motion.div
         className="w-full md:w-1/2"
         initial={{ scale: 0.9 }}
@@ -106,13 +103,11 @@ const FeatureCard = ({
 const Features = () => {
   return (
     <section className="w-full py-16 space-y-12 bg-white">
-      {/* Right-aligned heading */}
       <div className="w-full text-left px-6">
         <h2 className="text-5xl font-resotho md:text-7xl font-extrabold tracking-wide uppercase text-gray-900">
           Our Features
         </h2>
       </div>
-
       <div className="flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} feature={feature} index={index} />

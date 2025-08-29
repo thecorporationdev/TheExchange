@@ -72,20 +72,17 @@ export default function CoffeeAccordion() {
     <div className="w-full p-4"> 
       {coffees.map((coffee) => (
         <div key={coffee.id} className="border-b py-6 w-full">
-          {/* Header */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 w-full">
-            {/* Tag + Name */}
             <div className="flex items-center gap-3">
               <span
-                className={`text-white text-sm font-bold px-3 py-1 rounded-full ${coffee.tagColor}`}
+                className={`text-white text-sm font-bold px-3 py-1 rounded-full font-resotho ${coffee.tagColor}`}
               >
                 {coffee.tag}
               </span>
-              <h2 className="text-2xl font-resotho md:text-3xl font-bold">{coffee.name}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold font-resotho">{coffee.name}</h2>
             </div>
 
-            {/* Labels */}
-            <div className="flex flex-wrap gap-6 font-lato text-sm font-semibold uppercase">
+            <div className="flex flex-wrap gap-6 text-sm font-semibold uppercase font-resotho">
               <span>{coffee.flavor}</span>
               <span>{coffee.origin}</span>
               <span>{coffee.type}</span>

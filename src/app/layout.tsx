@@ -29,10 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-           <body className={`${Resotho.variable} ${LatoFont.variable} font-sans`}>
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${Resotho.variable} ${LatoFont.variable} font-lato`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

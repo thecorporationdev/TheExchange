@@ -3,11 +3,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-resotho: 'Resotho', sans-serif;
+  --font-lato: 'Lato', sans-serif;
 }
 
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-resothoextralight), sans-serif;
+  /* font-family: var(--font-resothoextralight), sans-serif; */
+}
+
+html {
+  font-family: var(--font-lato); /* Default body text is Lato */
+}
+
+.font-resotho {
+  font-family: var(--font-resotho);
+}
+
+.font-lato {
+  font-family: var(--font-lato);
 }

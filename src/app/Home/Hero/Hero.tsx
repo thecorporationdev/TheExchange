@@ -43,21 +43,19 @@ export default function Hero() {
         </AnimatePresence>
       </div>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40" />
 
-      {/* Text Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-0">
       <hr className="w-full border-t-1 border-white mt-6" />
 
-        <h1 className="text-5xl font-resotho md:text-7xl font-bold leading-tight">
+        <h1 className="text-5xl  md:text-7xl font-bold leading-tight font-resotho">
           High-end <br />{" "}
-          <span className="text-6xl md:text-8xl">Design + Build</span>
+          <span className="text-6xl  md:text-8xl font-resotho">Design + Build</span>
         </h1>
 
         <hr className="w-full border-t-1 border-white my-6" />
 
-        <p className="text-lg font-lato md:text-2xl max-w-3xl">
+        <p className="text-lg md:text-2xl max-w-3xl">
           for elevated living – Residential, Adaptive, and Wellness spaces
         </p>
 
