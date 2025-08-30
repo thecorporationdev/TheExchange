@@ -25,8 +25,8 @@ export default function Header() {
             <Image
               src="/assets/images/sTUDIO WALL.png"
               alt="logo"
-              width={120}
-              height={40}
+              width={220}
+              height={60}
               priority
             />
           </Link>
@@ -41,13 +41,13 @@ export default function Header() {
             <X size={28} />
           ) : isDesktop ? (
            <div className="flex gap-2 flex-row">
-            <h1 className="font-resotho">MENU</h1>
+            <h1 className="font-resotho lg:text-[30px]">MENU</h1>
             
              <Image
               src="/assets/svgs/menu.svg"
               alt="menu"
-              width={28}
-              height={28}
+              width={60}
+              height={60}
             />
            </div>
           ) : (
