@@ -12,7 +12,7 @@ export default function Footer() {
     alt="MAK Management Logo"
     width={1200}   // big enough so it won't pixelate
     height={200}
-    className="mx-auto w-full max-w-[1200px] h-auto object-contain"
+    className=" w-full h-auto object-contain"
     priority
   />
 </div>

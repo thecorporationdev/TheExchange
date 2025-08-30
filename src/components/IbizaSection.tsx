@@ -13,17 +13,19 @@ export default function IbizaSection() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ amount: 0.2 }}
       >
-        {/* Big Title */}
-        <motion.h2
-          className="w-full text-center text-[48px] sm:text-[80px] md:text-[120px] lg:text-[120px] font-serif italic font-medium leading-none"
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          located in{" "}
-          <span className="uppercase not-italic font-bold">IBIZA</span>{" "}
-          located
-        </motion.h2>
+<motion.h2
+  className="w-full text-[32px] sm:text-[60px] md:text-[90px] lg:text-[80px] font-serif italic text-center leading-tight tracking-wide"
+  initial={{ opacity: 0, y: -30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: 'easeOut' }}
+>
+  in <span className="uppercase italic">IBIZA</span> located in{' '}
+  <span className="uppercase italic">IBIZA</span>
+  <span className="italic"> locates</span>
+</motion.h2>
+
+
+
 
         {/* Description */}
         <motion.div
@@ -43,7 +45,7 @@ export default function IbizaSection() {
             MAK Management has expanded its scope beyond traditional booking
             activities such as creating festival line ups, club events, concert
             shows, corporate and private events and focuses on{" "}
-            <span className="font-bold">
+            <span className="">
               IMMERSIVE CULTURAL AND IDENTITY DRIVEN EXPERIENCES
             </span>{" "}
             that integrate MUSIC.
@@ -61,7 +63,7 @@ export default function IbizaSection() {
             holistic approach of diversification allows us to showcase cultural
             experiences in a variety of settings by providing a more
             comprehensive avenue of{" "}
-            <span className="font-bold">LIVE performances</span> to nurture a
+            <span className="">LIVE performances</span> to nurture a
             long term success for our clients and create memorable experiences
             that stand out.
           </motion.p>
