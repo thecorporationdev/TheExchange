@@ -6,15 +6,17 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <footer className="bg-[#fe0000] text-black relative">
-            <div className="w-full text-center py-8 px-4">
-                <Image
-                    src="/assets/images/sTUDIO WALL (1).png"
-                    alt="MAK Management Logo"
-                    width={300}
-                    height={100}
-                    className="mx-auto h-auto"
-                />
-            </div>
+           <div className="w-full text-center py-8 px-4">
+  <Image
+    src="/assets/images/sTUDIO WALL (1).png"
+    alt="MAK Management Logo"
+    width={1200}   // big enough so it won't pixelate
+    height={200}
+    className="mx-auto w-full max-w-[1200px] h-auto object-contain"
+    priority
+  />
+</div>
+
 
             <div className="max-w-4xl mx-auto text-center px-6 py-20">
                 <h4 className="uppercase font-resotho text-sm tracking-wide mb-2 font-resotho">Stay in the know</h4>

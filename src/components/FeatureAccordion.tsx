@@ -59,13 +59,13 @@ const FeatureCard = ({
       }}
       className="overflow-hidden border-b border-gray-300 dark:border-gray-700 pb-6 flex flex-col md:flex-row items-start justify-between gap-6 w-full"
     >
-      <motion.div
+      {/* <motion.div
         className="w-full md:w-1/2 text-left px-4 md:px-8"
         initial={{ opacity: 0, x: -30 }}
         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
         transition={{ duration: 0.6, delay: index * 0.3 }}
       >
-        <h3 className="text-3xl font-bold font-resotho">{feature.title}</h3>
+        <h3 className="text-3xl font-bold leading-snug font-resotho">{feature.title}</h3>
         <p className="uppercase text-sm text-gray-500 mt-1 font-resotho">
           {feature.subtitle}
         </p>
@@ -80,22 +80,34 @@ const FeatureCard = ({
         >
           {feature.description}
         </motion.p>
-      </motion.div>
-
-      {/* <motion.div
-        className="w-full md:w-1/2"
-        initial={{ scale: 0.9 }}
-        animate={inView ? { scale: 1 } : { scale: 0.9 }}
-        transition={{ duration: 0.6, delay: index * 0.2 }}
-      >
-        <Image
-          src={feature.image}
-          alt={feature.title}
-          width={1200}
-          height={400}
-          className="rounded-md object-cover w-full h-28 md:h-32"
-        />
       </motion.div> */}
+
+<motion.div
+  className="w-full md:w-1/2 text-left px-4 md:px-8"
+  initial={{ opacity: 0, x: -30 }}
+  animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+  transition={{ duration: 0.6, delay: index * 0.3 }}
+>
+  <h3 className="text-3xl font-bold font-resotho leading-snug mb-2 tracking-wider">
+    {feature.title}
+  </h3>
+
+  <p className="uppercase text-sm text-gray-500 font-resotho mb-3">
+    {feature.subtitle}
+  </p>
+
+  <motion.p
+    initial={{ opacity: 0, height: 0 }}
+    animate={inView ? { opacity: 1, height: "auto" } : { opacity: 0, height: 0 }}
+    transition={{ duration: 0.6, delay: index * 0.4 }}
+    className="text-gray-600 dark:text-gray-300 text-base leading-relaxed overflow-hidden"
+  >
+    {feature.description}
+  </motion.p>
+</motion.div>
+
+
+    
       <motion.div
   className="w-full md:w-1/2 overflow-hidden"
   initial={{ height: 100, opacity: 0 }}
@@ -118,7 +130,7 @@ const Features = () => {
   return (
     <section className="w-full py-16 space-y-12 bg-white">
       <div className="w-full text-left px-6">
-        <h2 className="text-5xl font-resotho md:text-7xl font-extrabold tracking-wide uppercase text-gray-900">
+        <h2 className="text-[30px] leading-snug font-resotho md:text-[90px] lg:text-[60px] font-bold tracking-wide uppercase text-gray-900">
           Our Features
         </h2>
       </div>

@@ -5,28 +5,29 @@ import { motion } from "framer-motion";
 
 export default function IbizaSection() {
   return (
-    <section className="w-full flex justify-center items-center px-4 py-12">
+    <section className="w-full bg-[#dfe109] px-4 py-16">
       <motion.div
-        className="relative w-full bg-[#dfe109] text-black rounded-xl p-6 md:p-10"
+        className="relative w-full text-black"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ amount: 0.2 }}
       >
-        <div className="absolute top-0 left-0 w-full h-full border-2 border-black rounded-xl pointer-events-none" />
-
+        {/* Big Title */}
         <motion.h2
-          className="text-center text-2xl md:text-4xl font-resotho italic font-semibold tracking-wide"
+          className="w-full text-center text-[48px] sm:text-[80px] md:text-[120px] lg:text-[120px] font-serif italic font-medium leading-none"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ amount: 0.2 }}
         >
-          located in <span className="uppercase not-italic">IBIZA</span>
+          located in{" "}
+          <span className="uppercase not-italic font-bold">IBIZA</span>{" "}
+          located
         </motion.h2>
 
+        {/* Description */}
         <motion.div
-          className="mt-6 text-sm md:text-base leading-relaxed space-y-4 text-justify"
+          className="mt-12 text-center max-w-3xl mx-auto text-sm md:text-base leading-relaxed space-y-6"
           initial="hidden"
           whileInView="visible"
           transition={{ staggerChildren: 0.3 }}
@@ -42,7 +43,7 @@ export default function IbizaSection() {
             MAK Management has expanded its scope beyond traditional booking
             activities such as creating festival line ups, club events, concert
             shows, corporate and private events and focuses on{" "}
-            <span className="font-bold font-resotho">
+            <span className="font-bold">
               IMMERSIVE CULTURAL AND IDENTITY DRIVEN EXPERIENCES
             </span>{" "}
             that integrate MUSIC.
@@ -60,9 +61,9 @@ export default function IbizaSection() {
             holistic approach of diversification allows us to showcase cultural
             experiences in a variety of settings by providing a more
             comprehensive avenue of{" "}
-            <span className="font-bold font-resotho">LIVE performances</span> to
-            nurture a long term success for our clients and create memorable
-            experiences that stand out.
+            <span className="font-bold">LIVE performances</span> to nurture a
+            long term success for our clients and create memorable experiences
+            that stand out.
           </motion.p>
         </motion.div>
       </motion.div>

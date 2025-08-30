@@ -45,7 +45,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center  h-full text-white text-center px-4">
         <motion.hr
           className="w-full border-t border-white mt-6"
           initial={{ scaleX: 0 }}
@@ -53,17 +53,42 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
         />
 
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold leading-tight font-resotho mt-6"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-        >
-          High-end <br />{" "}
-          <span className="text-6xl md:text-8xl font-resotho">
-            Design + Build
-          </span>
-        </motion.h1>
+      
+
+<motion.h1
+  className="text-5xl flex w-full max-w-full  flex-col font-bold mt-6"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+>
+  {/* Left aligned */}
+  <div className="flex flex-col lg:flex-row items-start w-full">
+    <h1 className="text-[30px] leading-snug font-resotho md:text-[90px] lg:text-[60px] leading-none normal-case">
+    INSIGHTFUL CONVERSATIONS
+    </h1>
+    <span className="text-[13px] md:text-[14px] lg:text-[20px] lg:ml-2 mt-1 lg:mt-0 normal-case">
+      Residential and Signature Properties
+    </span>
+  </div>
+
+  <div className="lg:h-10 h-0"></div>
+  <motion.hr
+          className="w-full border-t border-white my-6"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+        />
+        <div className="lg:h-10 h-0"></div>
+  {/* Right aligned */}
+  <div className="flex flex-col lg:flex-row items-start w-full justify-center text-right">
+    <span className="text-[13px] md:text-[14px] lg:text-[20px] lg:mr-2 mb-1 lg:mb-0 normal-case">
+      Residential and Signature Properties
+    </span>
+    <h1 className="text-[30px] leading-snug font-resotho md:text-[90px] lg:text-[60px] leading-none normal-case">
+    INFLUENCEIAL VOICE
+    </h1>
+  </div>
+</motion.h1>
 
         <motion.hr
           className="w-full border-t border-white my-6"
@@ -71,15 +96,6 @@ export default function Hero() {
           animate={{ scaleX: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1 }}
         />
-
-        <motion.p
-          className="text-lg md:text-2xl max-w-3xl"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 1.3 }}
-        >
-          for elevated living – Residential, Adaptive, and Wellness spaces
-        </motion.p>
       </div>
     </section>
   );
