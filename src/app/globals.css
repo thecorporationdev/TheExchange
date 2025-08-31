@@ -25,3 +25,74 @@ html {
 .font-lato {
   font-family: var(--font-lato);
 }
+
+/* styles/WelcomeSection.module.css or global.css */
+.welcome-section {
+  position: relative;
+  background-color: #ffffff;
+  padding: 6rem 1.5rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.welcome-section .welcome-label,
+.welcome-section .know-more {
+  position: absolute;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.welcome-section .welcome-label {
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.welcome-section .know-more {
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.welcome-section h1 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111827;
+  max-width: 4xl;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .welcome-section {
+    padding: 6rem 3rem;
+  }
+
+  .welcome-section .welcome-label,
+  .welcome-section .know-more {
+    font-size: 0.875rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .welcome-section {
+    padding: 6rem 6rem;
+  }
+
+  .welcome-section .welcome-label,
+  .welcome-section .know-more {
+    font-size: 1rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 3rem;
+  }
+}

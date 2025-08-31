@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white z-50 border-b">
+    <header className="fixed top-0 left-0 w-full bg-white z-50">
       <div className="flex items-center lg:h-[80px] justify-between px-4 py-4  mx-auto">
         <div className="flex items-center space-x-4">
           <Link href="/" aria-label="Home">
@@ -41,7 +41,7 @@ export default function Header() {
             <X size={28} />
           ) : isDesktop ? (
            <div className="flex gap-2 flex-row">
-            <h1 className="font-resotho lg:text-[12px]">MENU</h1>
+            <h1 className=" lg:text-[12px]">MENU</h1>
             
              <Image
               src="/assets/svgs/menu.svg"

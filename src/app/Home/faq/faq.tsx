@@ -1,7 +1,7 @@
 // components/CoffeeAccordion.tsx
 "use client";
 import { useState } from "react";
-import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
+// import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 
 type Coffee = {
   id: string;
