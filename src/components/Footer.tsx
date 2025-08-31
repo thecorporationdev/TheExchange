@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-      <footer className="w-full bg-red-600 text-white py-12 px-6 md:px-12 lg:px-5">
+      <footer className="w-full bg-red-600 text-white py-20 px-6 md:px-12 lg:px-5">
         <div className="">
           <div className="w-full text-center py-8 px-4">
   <Image
@@ -16,7 +16,6 @@ export default function Footer() {
   />
 </div>
   
-          {/* Footer Text */}
           <div className="text-sm tracking-wide text-white space-y-3">
             <p className="uppercase">Terms of Use</p>
             <p className="uppercase">Privacy Policy</p>
@@ -29,6 +28,7 @@ export default function Footer() {
             <p>YouTube: youtube.com/@TheExchangeAFR</p>
           </div>
         </div>
+        <div className="h-100"></div>
       </footer>
     );
   }
