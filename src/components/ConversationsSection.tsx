@@ -16,12 +16,14 @@ export default function ConversationsSection() {
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide text-gray-900 mb-3 sm:mb-4">
               POLITICS
             </h3>
-            <p className="text-base sm:text-lg leading-relaxed text-gray-700">
-              Design and development of a modern website to strengthen Kubota&apos;
-              presence in Quebec. The platform is utilized by 17 dealers,
-              featuring the seamless integration of API-driven data that
-              automatically syncs with Kubota&apos; product management system.
-            </p>
+            
+            <p className="text-base sm:text-lg leading-relaxed text-gray-700 text-justify sm:text-left">
+  Design and development of a modern website to strengthen Kubota&apos;
+  presence in Quebec. The platform is utilized by 17 dealers,
+  featuring the seamless integration of API-driven data that
+  automatically syncs with Kubota&apos; product management system.
+</p>
+
           </div>
 
           {/* Image Section */}

@@ -46,41 +46,42 @@ export default function Hero() {
   
     <div className="absolute inset-0" />
   
-    <div className="relative z-10 flex flex-col justify-start h-full text-white px-4 pt-30">
-      <motion.hr
-        className="w-full border-t border-black mb-6"
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 1.5 }}
-      />
-  
-      <div className="w-full">
-        <motion.h1
-          className="text-[30px] text-black md:text-[60px] lg:text-[70px] font-resotho font-bold tracking-wide text-left"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-        >
-          INSIGHTFUL CONVERSATIONS
-        </motion.h1>
-  
-        <motion.hr
-          className="w-full border-t border-black mb-6"
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
-        />
-  
-        <motion.h1
-          className="text-[30px] md:text-[60px] text-black lg:text-[70px] font-resotho font-bold tracking-wide text-right"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
-        >
-          INFLUENCIAL VOICES
-        </motion.h1>
-      </div>
-    </div>
+    <div className="relative z-10 flex flex-col justify-start h-full text-white px-4 pt-20 md:pt-30">
+  <motion.hr
+    className="w-full border-t border-black mb-4 md:mb-6"
+    initial={{ scaleX: 0 }}
+    animate={{ scaleX: 1 }}
+    transition={{ duration: 1, ease: "easeOut", delay: 1.5 }}
+  />
+
+  <div className="w-full space-y-4 md:space-y-6">
+    <motion.h1
+      className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] font-resotho font-bold tracking-wide text-left leading-snug md:leading-tight text-black"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+    >
+      INSIGHTFUL CONVERSATIONS
+    </motion.h1>
+
+    <motion.hr
+      className="w-full border-t border-black mb-4 md:mb-6"
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1 }}
+      transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+    />
+
+    <motion.h1
+      className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] font-resotho font-bold tracking-wide text-right leading-snug md:leading-tight text-black"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
+    >
+      INFLUENCIAL VOICES
+    </motion.h1>
+  </div>
+</div>
+
   </section>
   
   );
