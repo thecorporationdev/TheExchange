@@ -1,34 +1,45 @@
 import Image from "next/image";
 
-
 export default function Footer() {
-    return (
-      <footer className="w-full bg-red-600 text-white py-20 px-6 md:px-12 lg:px-5">
-        <div className="">
-          <div className="w-full text-center py-8 px-4">
-  <Image
-    src="/assets/images/sTUDIO WALL (1).png"
-    alt="MAK Management Logo"
-    width={1200}  
-    height={200}
-    className=" w-full h-auto object-contain"
-    priority
-  />
-</div>
-  
-          <div className="text-sm tracking-wide text-white space-y-3">
-            <p className="uppercase">Terms of Use</p>
-            <p className="uppercase">Privacy Policy</p>
-            <p className="uppercase">All Rights Reserved 2025 The Exchange Podcast</p>
-            <p className="uppercase">Social Media</p>
-            <p>Facebook: facebook.com/TheExchangeAFR</p>
-            <p>X (Twitter): x.com/TheExchangeAFR</p>
-            <p>Instagram: instagram.com/TheExchangeAFR</p>
-            <p>LinkedIn: linkedin.com/company/TheExchangeAFR</p>
-            <p>YouTube: youtube.com/@TheExchangeAFR</p>
-          </div>
+  return (
+    <footer className="w-full bg-red-600 text-white py-20 px-4 md:px-12 lg:px-5">
+      <div>
+        <div className="w-full py-8 justify-center flex">
+          <Image
+            src="/assets/images/sTUDIO WALL (1).png"
+            alt="MAK Management Logo"
+            width={1200}
+            height={200}
+            className="w-auto md:w-full h-auto object-contain"
+            priority
+          />
         </div>
-        <div className="h-100"></div>
-      </footer>
-    );
-  }
+
+        <div className="text-sm tracking-wide text-white space-y-3">
+          <p className="uppercase font-resotho">Terms of Use</p>
+          <p className="uppercase font-resotho">Privacy Policy</p>
+          <p className="uppercase font-resotho">
+            All Rights Reserved 2025 The Exchange Podcast
+          </p>
+          <p className="uppercase font-resotho">Social Media</p>
+          <p className="font-normal text-[10px]">
+            Facebook: facebook.com/TheExchangeAFR
+          </p>
+          <p className="font-normal text-[10px]">
+            X (Twitter): x.com/TheExchangeAFR
+          </p>
+          <p className="font-normal text-[10px]">
+            Instagram: instagram.com/TheExchangeAFR
+          </p>
+          <p className="font-normal text-[10px]">
+            LinkedIn: linkedin.com/company/TheExchangeAFR
+          </p>
+          <p className="font-normal text-[10px]">
+            YouTube: youtube.com/@TheExchangeAFR
+          </p>
+        </div>
+      </div>
+      <div className="h-100"></div>
+    </footer>
+  );
+}

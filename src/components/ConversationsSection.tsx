@@ -5,7 +5,7 @@ export default function ConversationsSection() {
     <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12 lg:px-5">
       <div>
         {/* Title */}
-        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold uppercase tracking-wide text-gray-900 mb-8 sm:mb-12">
+        <h2 className="uppercase lg:tracking-[0.3em] tracking-[0.0089em] text-3xl sm:text-4xl -ml-1 -lg:ml-1 md:text-6xl font-bold text-gray-900 mb-8 sm:mb-12 font-resotho">
           CONVERSATIONS
         </h2>
 
@@ -13,7 +13,7 @@ export default function ConversationsSection() {
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start">
           {/* Text Section */}
           <div className="flex-1 text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide text-gray-900 mb-3 sm:mb-4">
+            <h3 className="text-xl text-justify sm:text-2xl md:text-3xl font-bold uppercase tracking-[0.3em] text-gray-900 mb-3 sm:mb-4 font-resotho">
               POLITICS
             </h3>
             

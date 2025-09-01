@@ -1,5 +1,4 @@
 // import Image from "next/image";
-
 // export default function PeopleSection() {
 //   const people = [
 //     {
@@ -35,11 +34,12 @@
 //   return (
 //     <section className="w-full bg-white px-6 md:px-12 lg:px-5">
 //       <div>
-//         <h2 className="text-5xl md:text-6xl font-bold uppercase tracking-wide text-gray-900 mb-12 font-resotho">
+//         <h2 className="text-5xl md:text-6xl font-bold uppercase lg:tracking-[0.3em] tracking-[0.12em] text-gray-900 mb-12 font-resotho">
 //           PEOPLE
 //         </h2>
 
-//         <div className="flex flex-row gap-[2px] w-full  whitespace-nowrap overflow-hidden">
+//         {/* Mobile = grid (2 cols), Desktop = flex */}
+//         <div className="grid grid-cols-2 gap-[2px]  md:flex md:flex-row md:gap-[2px] w-full overflow-hidden">
 //           {people.map((person, index) => {
 //             const totalWidth = people.reduce((sum, p) => sum + p.width, 0);
 //             const percentWidth = (person.width / totalWidth) * 100;
@@ -47,8 +47,13 @@
 //             return (
 //               <div
 //                 key={index}
-//                 className="flex flex-col items-start"
-//                 style={{ width: `${percentWidth}%`, height: "auto" }}
+//                 className="flex flex-col items-start w-full md:w-auto"
+//                 style={{
+//                   width: undefined, // remove on mobile
+//                   height: "auto",
+//                   ...(typeof window !== "undefined" &&
+//                     window.innerWidth >= 768 && { width: `${percentWidth}%` }), // apply only on md+
+//                 }}
 //               >
 //                 <Image
 //                   src={person.image}
@@ -110,29 +115,25 @@ export default function PeopleSection() {
     },
   ];
 
+  const totalWidth = people.reduce((sum, p) => sum + p.width, 0);
+
   return (
     <section className="w-full bg-white px-6 md:px-12 lg:px-5">
       <div>
-        <h2 className="text-5xl md:text-6xl font-bold uppercase tracking-wide text-gray-900 mb-12 font-resotho">
+        <h2 className="text-5xl md:text-6xl font-bold uppercase lg:tracking-[0.3em] tracking-[0.12em] text-gray-900 mb-12 font-resotho">
           PEOPLE
         </h2>
 
-        {/* Mobile = grid (2 cols), Desktop = flex */}
+        {/* Mobile = grid (2 cols), Desktop = flex full width */} 
         <div className="grid grid-cols-2 gap-[2px] md:flex md:flex-row md:gap-[2px] w-full overflow-hidden">
           {people.map((person, index) => {
-            const totalWidth = people.reduce((sum, p) => sum + p.width, 0);
             const percentWidth = (person.width / totalWidth) * 100;
 
             return (
               <div
                 key={index}
-                className="flex flex-col items-start w-full md:w-auto"
-                style={{
-                  width: undefined, // remove on mobile
-                  height: "auto",
-                  ...(typeof window !== "undefined" &&
-                    window.innerWidth >= 768 && { width: `${percentWidth}%` }), // apply only on md+
-                }}
+                className="flex flex-col items-start w-full"
+                style={{ flexBasis: `${percentWidth}%` }}
               >
                 <Image
                   src={person.image}

@@ -54,7 +54,7 @@ export default function Header() {
             <Image
               src="/assets/svgs/menu.svg"
               alt="menu"
-              width={28}
+              width={50}
               height={28}
             />
           )}
