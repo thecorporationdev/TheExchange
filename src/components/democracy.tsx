@@ -11,6 +11,8 @@ export default function DemocracysSection() {
             <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-[0.3em] text-gray-900 mb-4 font-resotho">
             DEMOCRACY
             </h3>
+            <div className="lg:w-[400px]">    
+
             <p className="text-lg leading-relaxed text-gray-700">
             Design and development of a modern 
 website to strengthen Kubota&apos; presence 
@@ -20,6 +22,7 @@ integration of API-driven data that
 automatically syncs with Kubota&apos; 
 product management system. 
             </p>
+            </div>
           </div>
 
           <div className="flex-1">
