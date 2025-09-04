@@ -2,17 +2,24 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-red-600 text-white py-20 px-4 md:px-12 lg:px-5">
+    <footer className="w-full bg-red-600 text-white px-4 md:px-12 lg:px-5">
       <div>
-        <div className="w-full py-8 justify-center flex">
-          <Image
+        <div className="w-full py-8  flex">
+          {/* <Image
             src="/assets/images/sTUDIO WALL (1).png"
             alt="MAK Management Logo"
             width={1200}
             height={200}
             className="w-auto md:w-full h-auto object-contain"
             priority
-          />
+          /> */}
+            <Image
+              src="/assets/images/sTUDIO WALL (1).png"
+              alt="logo"
+              width={220}
+              height={60}
+              priority
+            />
         </div>
 
         <div className="text-sm tracking-wide text-white space-y-3">
