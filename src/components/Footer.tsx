@@ -39,7 +39,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="h-100"></div>
+      <div className="h-150"></div>
     </footer>
   );
 }

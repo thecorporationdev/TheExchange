@@ -63,7 +63,7 @@ export default function QuestionsSection() {
   </span>
   <span
     className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
-      openIndex === index ? "bg-white" : "bg-red-600"
+      openIndex === index ? "bg-white" : "bg-red-500"
     }`}
   >
     <Image
@@ -86,7 +86,7 @@ export default function QuestionsSection() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-base md:text-lg leading-relaxed text-gray-700 max-w-2xl">
+                <p className="text-base md:text-lg leading-relaxed text-gray-700 max-w-[350px]">
                   {item.answer}
                 </p>
               </div>

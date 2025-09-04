@@ -120,12 +120,12 @@ export default function PeopleSection() {
   return (
     <section className="w-full bg-white px-6 md:px-12 lg:px-5">
       <div>
-        <h2 className="text-5xl md:text-6xl font-bold uppercase lg:tracking-[0.3em] tracking-[0.12em] text-gray-900 mb-12 font-resotho">
+        <h2 className="text-5xl md:text-6xl font-bold lg:font-medium uppercase lg:tracking-[0.1em] tracking-[0.12em] text-gray-900 mb-12 font-resotho">
           PEOPLE
         </h2>
 
         {/* Mobile = grid (2 cols), Desktop = flex full width */} 
-        <div className="grid grid-cols-2 gap-[2px] md:flex md:flex-row md:gap-[2px] w-full overflow-hidden">
+        <div className="grid grid-cols-2 gap-[5px] md:flex md:flex-row md:gap-[10px] w-full overflow-hidden">
           {people.map((person, index) => {
             const percentWidth = (person.width / totalWidth) * 100;
 
