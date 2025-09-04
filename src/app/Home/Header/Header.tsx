@@ -41,7 +41,7 @@ export default function Header() {
             <X size={28} />
           ) : isDesktop ? (
            <div className="flex gap-2 flex-row">
-            <h1 className=" lg:text-[12px]">MENU</h1>
+            <h1 className=" lg:text-[12px] font-resotho uppercase lg:tracking-[0.1em] tracking-[0.12em]">MENU</h1>
             
              <Image
               src="/assets/svgs/menu.svg"

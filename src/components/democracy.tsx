@@ -31,7 +31,7 @@ export default function DemocracysSection() {
               alt="Politics rally"
               width={800}
               height={500}
-              className="rounded-lg shadow-lg object-cover w-full h-auto"
+              className=" object-cover w-full h-auto"
             />
           </div>
         </div>
