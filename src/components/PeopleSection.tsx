@@ -19,7 +19,7 @@ export default function PeopleSection() {
       title: "KEY ANCHOR",
       image: "/assets/images/femi.jpeg",
       width: 600,
-      height: 700,
+      height: 600,
       bio: "Femi Soneye is an experienced broadcaster and key anchor with years of expertise in insightful conversations and impactful storytelling.",
     },
     {
@@ -35,7 +35,7 @@ export default function PeopleSection() {
       title: "KEY ANCHOR",
       image: "/assets/images/femi2.jpeg",
       width: 400,
-      height: 500,
+      height: 600,
       bio: "Femi Soneye continues to shape meaningful discussions with his dynamic approach to anchoring and journalism.",
     },
     {
@@ -69,13 +69,37 @@ export default function PeopleSection() {
                 style={{ flexBasis: `${percentWidth}%` }}
                 onClick={() => setSelectedPerson(person)}
               >
-                <Image
+                {/* <Image
                   src={person.image}
                   alt={person.name}
                   width={person.width}
                   height={person.height}
-                  className="object-cover w-full h-auto rounded-md"
-                />
+                  className="object-cover w-full h-auto"
+                /> */}
+          {/* <Image
+  src={person.image}
+  alt={person.name}
+  width={person.width}
+  height={person.height}
+  className="object-cover object-top w-full max-h-[400px] md:max-h-[450px] lg:max-h-[650px]"
+/> */}
+<Image
+  src={person.image}
+  alt={person.name}
+  width={person.width}
+  height={person.height}
+  className={`w-full ${
+    index === 0
+      ? "object-fit object-bottom max-h-[400px] md:max-h-[450px] lg:max-h-[550px]"
+      : index === 2
+      ? "object-cover object-top max-h-[500px] md:max-h-[600px] lg:max-h-[750px]"
+      : "object-cover object-top max-h-[400px] md:max-h-[450px] lg:max-h-[500px]"
+  }`}
+/>
+
+
+
+
                 <div className="mt-1">
                   <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.16em] text-black font-resotho">
                     {person.name}

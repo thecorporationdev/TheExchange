@@ -15,20 +15,20 @@ export default function Footer() {
         </div>
 
         <div className="text-sm tracking-wide text-white space-y-3">
-          <p className="uppercase lg:tracking-[0.1em] tracking-[0.16em] font-resotho">
+          <p className="uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
             Terms of Use
           </p>
-          <p className="uppercase lg:tracking-[0.1em] tracking-[0.16em] font-resotho">
+          <p className="uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
             Privacy Policy
           </p>
-          <p className="uppercase lg:tracking-[0.1em] tracking-[0.16em] font-resotho">
+          <p className="uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
             All Rights Reserved 2025 The Exchange Podcast
           </p>
 
-          <p className="uppercase lg:tracking-[0.1em] tracking-[0.16em] font-resotho">
+          <p className="uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
             Social Media
           </p>
-          <p className="font-normal text-[14px]">
+          <p className="font-normal text-[15px]">
             <a
               href="https://facebook.com/TheExchangeAFR"
               target="_blank"
@@ -38,7 +38,7 @@ export default function Footer() {
               Facebook: facebook.com/TheExchangeAFR
             </a>
           </p>
-          <p className="font-normal text-[14px]">
+          <p className="font-normal text-[15px]">
             <a
               href="https://x.com/TheExchangeAFR"
               target="_blank"
@@ -48,7 +48,7 @@ export default function Footer() {
               X (Twitter): x.com/TheExchangeAFR
             </a>
           </p>
-          <p className="font-normal text-[14px]">
+          <p className="font-normal text-[15px]">
             <a
               href="https://instagram.com/TheExchangeAFR"
               target="_blank"
@@ -58,7 +58,7 @@ export default function Footer() {
               Instagram: instagram.com/TheExchangeAFR
             </a>
           </p>
-          <p className="font-normal text-[14px]">
+          <p className="font-normal text-[15px]">
             <a
               href="https://linkedin.com/company/TheExchangeAFR"
               target="_blank"
@@ -68,7 +68,7 @@ export default function Footer() {
               LinkedIn: linkedin.com/company/TheExchangeAFR
             </a>
           </p>
-          <p className="font-normal text-[14px]">
+          <p className="font-normal text-[15px]">
             <a
               href="https://youtube.com/@TheExchangeAFR"
               target="_blank"

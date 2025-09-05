@@ -41,14 +41,13 @@ export default function QuestionsSection() {
                 className="flex justify-between items-center w-full text-left gap-4"
               >
                 {/* Question Text */}
-                <span className="text-lg md:text-2xl font-semibold uppercase tracking-[0.3em] text-gray-900 font-resotho flex-1">
+                <span className="text-lg md:text-2xl font-semibold uppercase tracking-[0.06em] text-gray-900 font-resotho flex-1">
                   {item.question}
                 </span>
 
                 {/* Icons */}
                 
-             
-
+            
 <div className="flex border border-gray-300 shrink-0">
   <span
     className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
@@ -56,8 +55,8 @@ export default function QuestionsSection() {
     }`}
   >
     <Image
-      src="/assets/svgs/-.svg"
-      alt="minus"
+      src="/assets/svgs/+.svg"
+      alt="plus"
       width={20}
       height={20}
       className={`md:w-6 md:h-6 w-4 h-4 ${
@@ -71,14 +70,15 @@ export default function QuestionsSection() {
     }`}
   >
     <Image
-      src="/assets/svgs/+.svg"
-      alt="plus"
+      src="/assets/svgs/-.svg"
+      alt="minus"
       width={20}
       height={20}
-      className={`md:w-6 md:h-6 w-4 h-4`}
+      className="md:w-6 md:h-6 w-4 h-4"
     />
   </span>
 </div>
+
 
 
               </button>

@@ -24,6 +24,7 @@ export default function DemocracysSection() {
               </p>
             </div>
           </div>
+          <div className="hidden md:block"></div>
 
           <div className="flex w-full">
             <Image
