@@ -21,7 +21,7 @@ export default function QuestionsSection() {
   return (
     <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-5">
       <div>
-        <h2 className="text-4xl md:text-6xl font-bold uppercase lg:tracking-[0.1em]  tracking-[0.12em] text-gray-900 mb-12 font-resotho">
+        <h2 className="font-bold uppercase text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 mb-12 font-resotho">
           QUESTIONS
         </h2>
         <motion.hr
@@ -47,34 +47,7 @@ export default function QuestionsSection() {
 
                 {/* Icons */}
                 
-                {/* <div className="flex border border-gray-300 shrink-0">
-  <span
-    className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
-      openIndex === index ? "bg-red-600" : "bg-white"
-    }`}
-  >
-    <Image
-      src="/assets/svgs/-.svg"
-      alt="minus"
-      width={20}
-      height={20}
-      className="md:w-6 md:h-6 w-4 h-4"
-    />
-  </span>
-  <span
-    className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
-      openIndex === index ? "bg-white" : "bg-red-500"
-    }`}
-  >
-    <Image
-      src="/assets/svgs/+.svg"
-      alt="plus"
-      width={20}
-      height={20}
-      className="md:w-6 md:h-6 w-4 h-4"
-    />
-  </span>
-</div> */}
+             
 
 <div className="flex border border-gray-300 shrink-0">
   <span

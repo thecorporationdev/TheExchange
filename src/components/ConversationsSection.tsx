@@ -4,20 +4,17 @@ export default function ConversationsSection() {
   return (
     <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12 lg:px-5">
       <div>
-        {/* Title */}
-        <h2 className="uppercase lg:tracking-[0.1em] tracking-[0.0089em] text-3xl sm:text-4xl -ml-1 -lg:ml-1 md:text-6xl font-bold text-gray-900 mb-8 sm:mb-12 font-resotho">
+        <h2 className="uppercase text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] -lg:ml-1 font-bold text-gray-900 mb-8 sm:mb-12 font-resotho">
           CONVERSATIONS
         </h2>
 
-        {/* Flex wrapper */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start">
-          {/* Text Section */}
           <div className="flex-1 text-center md:text-left">
   <h3 className="text-xl text-justify sm:text-2xl md:text-3xl font-bold uppercase lg:tracking-[0.1em] tracking-[0.12em] text-gray-900 mb-3 sm:mb-4 font-resotho">
     POLITICS
   </h3>
   <div className="lg:w-[400px]">
-    <p className="text-lg sm:text-xl leading-relaxed text-gray-700 text-justify sm:text-left">
+    <p className="text-lg sm:text-xl leading-relaxed text-gray-700 lg:text-justify text-left sm:text-left">
       Design and development of a modern website to strengthen Kubota&apos;
       presence in Quebec. The platform is utilized by 17 dealers,
       featuring the seamless integration of API-driven data that

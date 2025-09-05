@@ -17,6 +17,7 @@ import Footer from "@/components/Footer";
 const HomeScreen = () => {
     return(<div>
         <Header />
+        <div className="my-24 md:my-0" /> 
         <Hero/>
 <WelcomeSection />
 <ConversationsSection />
