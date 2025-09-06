@@ -13,7 +13,7 @@ const WelcomeSection = () => {
           For 10 years, our Montreal web design agency has been delivering powerful, tailor-made websites that help brands anchor their authority. Now, we&apos;re harnessing this cargo of expertise to propel your next project.
         </h1>
 
-        <p className="font-bold lg:text-[16px] text-[14px] uppercase font-bold lg:tracking-[0.1em] tracking-[0.16em] text-black mt-6 absolute lg:bottom-20 bottom-6 right-6 md:right-12 lg:right-5 font-resotho">
+        <p className="font-bold lg:text-[14.5px] text-[14px] uppercase font-bold lg:tracking-[0.1em] tracking-[0.16em] text-black mt-6 absolute lg:bottom-20 bottom-6 right-6 md:right-12 lg:right-5 font-resotho">
           Know More
         </p>
       </div>

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-red-600 text-white px-4 md:px-12 lg:px-5">
       <div>
-        <div className="w-full py-8 flex">
+        <div className="w-full py-8 pb-24 flex">
           <Image
             src="/assets/images/sTUDIO WALL (1).png"
             alt="logo"

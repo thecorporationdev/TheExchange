@@ -14,7 +14,7 @@ export default function ConversationsSection() {
     POLITICS
   </h3>
   <div className="lg:w-[400px]">
-    <p className="text-lg sm:text-xl leading-relaxed text-gray-700 lg:text-left text-left sm:text-left">
+    <p className="text-[16px] lg:text-[22px] leading-relaxed text-gray-700 lg:text-left text-left sm:text-left">
       Design and development of a modern website to strengthen Kubota&apos;
       presence in Quebec. The platform is utilized by 17 dealers,
       featuring the seamless integration of API-driven data that

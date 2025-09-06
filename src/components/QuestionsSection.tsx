@@ -40,33 +40,18 @@ export default function QuestionsSection() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="flex justify-between items-center w-full text-left gap-4"
               >
-                {/* Question Text */}
                 <span className="text-lg md:text-2xl font-semibold uppercase tracking-[0.06em] text-gray-900 font-resotho flex-1">
                   {item.question}
                 </span>
+              
+      
 
-                {/* Icons */}
-                
-            
-<div className="flex border border-gray-300 shrink-0">
+{/* 
+<div className="flex border border-black shrink-0">
+  Minus (active when open)
   <span
     className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
       openIndex === index ? "bg-red-600" : "bg-white"
-    }`}
-  >
-    <Image
-      src="/assets/svgs/+.svg"
-      alt="plus"
-      width={20}
-      height={20}
-      className={`md:w-6 md:h-6 w-4 h-4 ${
-        openIndex === index ? "invert" : ""
-      }`}
-    />
-  </span>
-  <span
-    className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
-      openIndex === index ? "bg-white" : "bg-red-500"
     }`}
   >
     <Image
@@ -74,24 +59,66 @@ export default function QuestionsSection() {
       alt="minus"
       width={20}
       height={20}
-      className="md:w-6 md:h-6 w-4 h-4"
+      className={openIndex === index ? "text-white" : "text-black"}
+    />
+  </span>
+
+  Plus (active when closed)
+  <span
+    className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
+      openIndex !== index ? "bg-red-600" : "bg-white"
+    }`}
+  >
+    <Image
+      src="/assets/svgs/+.svg"
+      alt="plus"
+      width={20}
+      height={20}
+      className={openIndex !== index ? "text-white" : "text-black"}
+    />
+  </span>
+</div> */}
+<div className="flex border border-black shrink-0">
+  {/* Minus (active when open) */}
+  <span
+    className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
+      openIndex === index ? "bg-red-600" : "bg-white"
+    }`}
+  >
+    <Image
+      src="/assets/svgs/-.svg"
+      alt="minus"
+      width={20}
+      height={20}
+      className={openIndex === index ? "invert brightness-0" : "invert-0"}
+    />
+  </span>
+
+  {/* Plus (active when closed) */}
+  <span
+    className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
+      openIndex !== index ? "bg-red-600" : "bg-white"
+    }`}
+  >
+    <Image
+      src="/assets/svgs/+.svg"
+      alt="plus"
+      width={20}
+      height={20}
+      className={openIndex !== index ? "invert brightness-0" : "invert-0"}
     />
   </span>
 </div>
 
-
-
               </button>
 
-              {/* Answer */}
               <div
-                className={`mt-4 overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index
+                className={`mt-4 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index
                     ? "max-h-96 opacity-100"
                     : "max-h-0 opacity-0"
-                }`}
+                  }`}
               >
-                <p className="text-base md:text-lg leading-relaxed text-gray-700 max-w-[350px]">
+                <p className="text-[16px] lg:text-[22px] leading-relaxed text-gray-700 max-w-[350px]">
                   {item.answer}
                 </p>
               </div>

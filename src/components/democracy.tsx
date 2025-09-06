@@ -13,7 +13,7 @@ export default function DemocracysSection() {
             </h3>
             <div className="lg:w-[400px]">
 
-              <p className="text-lg leading-relaxed text-gray-700">
+              <p className="text-[16px] lg:text-[22px] leading-relaxed text-gray-700">
                 Design and development of a modern
                 website to strengthen Kubota&apos; presence
                 in Quebec. The platform is utilized by 17

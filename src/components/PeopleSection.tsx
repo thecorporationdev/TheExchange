@@ -90,7 +90,7 @@ export default function PeopleSection() {
   height={person.height}
   className={`w-full ${
     index === 0
-      ? "object-fit object-bottom max-h-[400px] md:max-h-[450px] lg:max-h-[550px]"
+      ? "object-cover object-top max-h-[400px] md:max-h-[450px] lg:max-h-[550px]"
       : index === 2
       ? "object-cover object-top max-h-[500px] md:max-h-[600px] lg:max-h-[750px]"
       : "object-cover object-top max-h-[400px] md:max-h-[450px] lg:max-h-[500px]"
