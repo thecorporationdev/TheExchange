@@ -54,7 +54,7 @@ export default function PeopleSection() {
   return (
     <section className="w-full bg-white px-6 md:px-12 lg:px-5">
       <div>
-        <h2 className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] font-bold uppercase text-gray-900 mb-12 font-resotho">
+        <h2 className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em]  text-gray-900 mb-12 font-resotho">
           PEOPLE
         </h2>
 
