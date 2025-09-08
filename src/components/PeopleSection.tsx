@@ -54,9 +54,14 @@ export default function PeopleSection() {
   return (
     <section className="w-full bg-white px-6 md:px-12 lg:px-5">
       <div>
-        <h2 className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em]  text-gray-900 mb-12 font-resotho">
+          <h2 className="hidden md:block uppercase text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 mb-5 lg:mb-8 sm:mb-12 font-resotho">
           PEOPLE
         </h2>
+        <h2 className="w-full  block md:hidden uppercase conversations-heading tracking-[0.16em] text-gray-900 mb-5 font-resotho">
+          PEOPLE
+        </h2>
+
+        
 
         <div className="grid grid-cols-1 gap-5 md:flex md:flex-row md:gap-[10px] w-full overflow-hidden -mt-5 lg:mt-0">
           {people.map((person, index) => {
@@ -81,10 +86,10 @@ export default function PeopleSection() {
                     }`}
                 />
                 <div className="mt-1">
-                  <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.16em] text-black font-resotho">
+                  <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.16em] text-black font-resotho">
                     {person.name}
                   </p>
-                  <p className="text-[9px] md:text-[10px] font-medium uppercase tracking-wider text-black">
+                  <p className="text-[10px] md:text-[10px] font-medium uppercase tracking-wider text-black">
                     {person.title}
                   </p>
                 </div>

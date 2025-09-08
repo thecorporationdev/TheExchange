@@ -13,7 +13,7 @@ const HomeScreen = () => {
         <Header />
         <div className="my-10 md:my-0" />
         <Hero />
-        <div className="-mt-[190px] md:mt-0">
+        <div className="-mt-[160px] md:mt-0">
             <WelcomeSection />
         </div>
         <div className="-mt-[70px] md:mt-0">

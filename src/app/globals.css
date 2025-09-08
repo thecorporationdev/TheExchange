@@ -98,4 +98,60 @@ html {
 }
 
 
+/* Global overrides for Conversations heading */
+.conversations-heading {
+  font-size: 18px; /* default for very small screens (<320px) */
+}
+
+@media (min-width: 320px) {
+  .conversations-heading {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 375px) {
+  .conversations-heading {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 425px) {
+  .conversations-heading {
+    font-size: 32.5px;
+  }
+}
+
+/* Standard Tailwind breakpoints */
+@media (min-width: 640px) { /* sm */
+  .conversations-heading {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) { /* md */
+  .conversations-heading {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .conversations-heading {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 1280px) { /* xl */
+  .conversations-heading {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1536px) { /* 2xl */
+  .conversations-heading {
+    font-size: 100px;
+  }
+}
+
+
+
 

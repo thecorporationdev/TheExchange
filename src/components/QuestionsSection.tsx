@@ -21,9 +21,15 @@ export default function QuestionsSection() {
   return (
     <section className="w-full bg-white lg:py-16 py-10 px-6 md:px-12 lg:px-5">
       <div>
-        <h2 className=" text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 mb-12 font-resotho">
+       
+
+<h2 className="hidden md:block uppercase text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 mb-5 lg:mb-8 sm:mb-12 font-resotho">
           QUESTIONS
         </h2>
+        <h2 className="w-full block md:hidden uppercase conversations-heading tracking-[0.16em] text-gray-900 mb-5 font-resotho">
+          QUESTIONS
+        </h2>
+        
         <motion.hr
           className="w-full border-t border-grey my-5 -mt-5 lg:mt-0"
           initial={{ scaleX: 0 }}
@@ -40,12 +46,12 @@ export default function QuestionsSection() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="flex justify-between items-center w-full text-left gap-4"
               >
-                <span className="text-[12px] md:text-[24px] font-semibold uppercase tracking-[0.06em] text-gray-900 font-resotho flex-1">
+                <span 
+                // className="text-[12px] md:text-[24px] font-semibold uppercase tracking-[0.06em] text-gray-900 font-resotho flex-1"
+                className="text-[15px] sm:text-[24px] md:text-[30px] uppercase tracking-[0.3em] text-gray-900 font-resotho flex-1"
+                >
                   {item.question}
                 </span>
-              
-      
-
 
 <div className="flex border border-black shrink-0">
   <span

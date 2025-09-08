@@ -8,12 +8,12 @@ export default function DemocracysSection() {
 
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="flex-1">
-            <h3 className="text-[15px] sm:text-[24px] md:text-[30px] font-bold uppercase tracking-[0.3em] text-gray-900 mb-4 font-resotho">
+            <h3 className="text-[15px] sm:text-[24px] md:text-[30px] uppercase tracking-[0.3em] text-gray-900 mb-4 font-resotho">
               DEMOCRACY
             </h3>
             <div className="lg:w-[400px]">
 
-              <p className="text-[16px] lg:text-[22px] leading-relaxed text-gray-700">
+              <p className="text-[17.5px] lg:text-[22px] leading-relaxed text-gray-700">
                 Design and development of a modern
                 website to strengthen Kubota&apos; presence
                 in Quebec. The platform is utilized by 17
