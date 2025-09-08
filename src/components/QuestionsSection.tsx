@@ -19,13 +19,13 @@ export default function QuestionsSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-5">
+    <section className="w-full bg-white lg:py-16 py-10 px-6 md:px-12 lg:px-5">
       <div>
         <h2 className=" text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 mb-12 font-resotho">
           QUESTIONS
         </h2>
         <motion.hr
-          className="w-full border-t border-black my-6"
+          className="w-full border-t border-grey my-5 -mt-5 lg:mt-0"
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1.5 }}
@@ -40,46 +40,14 @@ export default function QuestionsSection() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="flex justify-between items-center w-full text-left gap-4"
               >
-                <span className="text-lg md:text-2xl font-semibold uppercase tracking-[0.06em] text-gray-900 font-resotho flex-1">
+                <span className="text-[12px] md:text-[24px] font-semibold uppercase tracking-[0.06em] text-gray-900 font-resotho flex-1">
                   {item.question}
                 </span>
               
       
 
-{/* 
-<div className="flex border border-black shrink-0">
-  Minus (active when open)
-  <span
-    className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
-      openIndex === index ? "bg-red-600" : "bg-white"
-    }`}
-  >
-    <Image
-      src="/assets/svgs/-.svg"
-      alt="minus"
-      width={20}
-      height={20}
-      className={openIndex === index ? "text-white" : "text-black"}
-    />
-  </span>
 
-  Plus (active when closed)
-  <span
-    className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
-      openIndex !== index ? "bg-red-600" : "bg-white"
-    }`}
-  >
-    <Image
-      src="/assets/svgs/+.svg"
-      alt="plus"
-      width={20}
-      height={20}
-      className={openIndex !== index ? "text-white" : "text-black"}
-    />
-  </span>
-</div> */}
 <div className="flex border border-black shrink-0">
-  {/* Minus (active when open) */}
   <span
     className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
       openIndex === index ? "bg-red-600" : "bg-white"
@@ -94,7 +62,6 @@ export default function QuestionsSection() {
     />
   </span>
 
-  {/* Plus (active when closed) */}
   <span
     className={`w-8 h-8 flex items-center justify-center transition-colors duration-200 ${
       openIndex !== index ? "bg-red-600" : "bg-white"

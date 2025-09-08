@@ -58,10 +58,9 @@ export default function PeopleSection() {
           PEOPLE
         </h2>
 
-        <div className="grid grid-cols-1 gap-5 md:flex md:flex-row md:gap-[10px] w-full overflow-hidden">
+        <div className="grid grid-cols-1 gap-5 md:flex md:flex-row md:gap-[10px] w-full overflow-hidden -mt-5 lg:mt-0">
           {people.map((person, index) => {
             const percentWidth = (person.width / totalWidth) * 100;
-
             return (
               <div
                 key={index}
@@ -69,37 +68,18 @@ export default function PeopleSection() {
                 style={{ flexBasis: `${percentWidth}%` }}
                 onClick={() => setSelectedPerson(person)}
               >
-                {/* <Image
+                <Image
                   src={person.image}
                   alt={person.name}
                   width={person.width}
                   height={person.height}
-                  className="object-cover w-full h-auto"
-                /> */}
-          {/* <Image
-  src={person.image}
-  alt={person.name}
-  width={person.width}
-  height={person.height}
-  className="object-cover object-top w-full max-h-[400px] md:max-h-[450px] lg:max-h-[650px]"
-/> */}
-<Image
-  src={person.image}
-  alt={person.name}
-  width={person.width}
-  height={person.height}
-  className={`w-full ${
-    index === 0
-      ? "object-cover object-top max-h-[400px] md:max-h-[450px] lg:max-h-[550px]"
-      : index === 2
-      ? "object-cover object-top max-h-[500px] md:max-h-[600px] lg:max-h-[750px]"
-      : "object-cover object-top max-h-[400px] md:max-h-[450px] lg:max-h-[500px]"
-  }`}
-/>
-
-
-
-
+                  className={`w-full ${index === 0
+                      ? "object-cover object-top max-h-[400px] md:max-h-[450px] lg:max-h-[550px]"
+                      : index === 2
+                        ? "object-cover object-top max-h-[500px] md:max-h-[600px] lg:max-h-[750px]"
+                        : "object-cover object-top max-h-[400px] md:max-h-[450px] lg:max-h-[500px]"
+                    }`}
+                />
                 <div className="mt-1">
                   <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.16em] text-black font-resotho">
                     {person.name}

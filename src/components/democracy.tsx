@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function DemocracysSection() {
   return (
-    <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-5">
+    <section className="w-full bg-white py-5 lg:py-16 px-6 md:px-12 lg:px-5">
       <div className="">
 
 
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="flex-1">
-            <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-[0.3em] text-gray-900 mb-4 font-resotho">
+            <h3 className="text-[15px] sm:text-[24px] md:text-[30px] font-bold uppercase tracking-[0.3em] text-gray-900 mb-4 font-resotho">
               DEMOCRACY
             </h3>
             <div className="lg:w-[400px]">
@@ -26,7 +26,7 @@ export default function DemocracysSection() {
           </div>
           <div className="hidden md:block"></div>
 
-          <div className="flex w-full">
+          <div className="flex w-full -mt-5 lg:mt-0">
             <Image
               src="/assets/images/democracy.jpeg"
               alt="Politics rally"

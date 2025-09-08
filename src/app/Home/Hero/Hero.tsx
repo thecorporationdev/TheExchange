@@ -32,14 +32,7 @@ export default function Hero() {
             transition={{ duration: 1.5, ease: "easeInOut" }}
             className="absolute inset-0"
           >
-{/* Mobile: Constrained width, cover height without extra space */}
-<Image
-  src={images[index]}
-  alt={`Hero background ${index}`}
-  fill
-  priority
-  className="block md:hidden"
-/>
+
 
 {/* Desktop: Full width with object-cover */}
 <Image
@@ -59,7 +52,7 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col justify-start h-full text-white px-4 pt-20 md:pt-30">
         <motion.hr
-          className="w-full border-t border-black mb-4 md:mb-6"
+          className="w-full border-t border-[grey] mb-4 md:mb-6"
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1.5 }}
@@ -76,7 +69,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.hr
-            className="w-full border-t border-black mb-4 md:mb-6"
+            className="w-full border-t border-[grey] mb-4 md:mb-6"
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
@@ -92,6 +85,41 @@ export default function Hero() {
           </motion.h1>
         </div>
       </div>
+      
+      {/* <div className="relative -mt-20 w-full h-[300px] sm:h-[400px]  px-1 md:hidden">
+  <div className="relative w-full h-full">
+    <Image
+      src={images[index]}
+      alt={`Hero mobile ${index}`}
+      fill
+      priority
+      className="object-cover rounded-lg"
+      sizes="100vw"
+    />
+  </div>
+</div> */}
+<div className="relative -mt-20 w-full h-[300px] sm:h-[400px] px-1 md:hidden">
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={index}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+      className="relative w-full h-full"
+    >
+      <Image
+        src={images[index]}
+        alt={`Hero mobile ${index}`}
+        fill
+        priority
+        className="object-cover rounded-lg"
+        sizes="100vw"
+      />
+    </motion.div>
+  </AnimatePresence>
+</div>
+
     </section>
   );
 }

@@ -22,13 +22,25 @@ export default function Header() {
       <div className="flex items-center lg:h-[80px] justify-between px-4 py-4  mx-auto">
         <div className="flex items-center space-x-4">
           <Link href="/" aria-label="Home">
-            <Image
+            {/* <Image
               src="/assets/images/sTUDIO WALL.png"
               alt="logo"
               width={220}
               height={60}
               priority
-            />
+            /> */}
+
+<div className="relative w-[160px] h-[50px] md:w-[220px] md:h-[60px]">
+  <Image
+    src="/assets/images/sTUDIO WALL.png"
+    alt="logo"
+    fill
+    className="object-contain"
+    priority
+    sizes="(max-width: 768px) 180px, 220px"
+  />
+</div>
+
           </Link>
         </div>
 
@@ -86,10 +98,10 @@ export default function Header() {
               </div>
               <nav className="flex font-resotho flex-col items-center space-y-6 p-8 text-lg font-medium">
                 <a href="#" onClick={() => setOpen(false)}>Agence</a>
-                <a href="#" onClick={() => setOpen(false)}>Services</a>
+                {/* <a href="#" onClick={() => setOpen(false)}>Services</a>
                 <a href="#" onClick={() => setOpen(false)}>Projets</a>
                 <a href="#" onClick={() => setOpen(false)}>Clients</a>
-                <a href="#" onClick={() => setOpen(false)}>Insights</a>
+                <a href="#" onClick={() => setOpen(false)}>Insights</a> */}
               </nav>
             </motion.div>
           </>
