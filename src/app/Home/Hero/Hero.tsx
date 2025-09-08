@@ -60,7 +60,7 @@ export default function Hero() {
 
         <div className="w-full space-y-4 md:space-y-6">
           <motion.h1
-            className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] font-resotho font-bold uppercase lg:tracking-[0.1em] tracking-[0.19em] text-left leading-snug md:leading-tight text-black"
+            className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] font-resotho  uppercase lg:tracking-[0.1em] tracking-[0.19em] text-left leading-snug md:leading-tight text-black"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
@@ -76,7 +76,7 @@ export default function Hero() {
           />
 
           <motion.h1
-            className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] font-resotho font-bold uppercase lg:tracking-[0.1em] tracking-[0.19em] text-right leading-snug md:leading-tight text-black"
+            className="text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] font-resotho uppercase lg:tracking-[0.1em] tracking-[0.19em] text-right leading-snug md:leading-tight text-black"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
