@@ -56,6 +56,7 @@ export default function Hero() {
         />
 
         <div className="w-full space-y-4 md:space-y-6">
+{/* INSIGHTFUL + CONVERSATIONS */}
 <motion.div
   className="flex flex-col md:flex-row md:items-baseline"
   initial={{ opacity: 0, y: 40 }}
@@ -63,17 +64,17 @@ export default function Hero() {
   transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
 >
   {/* INSIGHTFUL */}
-  <h1 className="conversations-heading font-resotho uppercase lg:tracking-[0.1em] tracking-[0.19em] text-left leading-snug md:leading-tight text-black md:mr-4">
+  <h1 className="conversations-heading font-resotho uppercase lg:tracking-[0.1em] tracking-[0.19em] text-left leading-tight text-black md:mr-4">
     INSIGHTFUL
   </h1>
 
   {/* Desktop: CONVERSATIONS */}
-  <h2 className="hidden md:inline-block uppercase text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 font-resotho">
+  <h2 className="hidden md:inline-block uppercase text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 font-resotho leading-tight">
     CONVERSATIONS
   </h2>
 
   {/* Mobile: CONVERSATIONS */}
-  <h2 className="w-full conversations-heading text-center block md:hidden uppercase tracking-[0.16em] text-gray-900 mt-2 font-resotho">
+  <h2 className="w-full conversations-heading text-center block md:hidden uppercase tracking-[0.16em] text-gray-900 font-resotho leading-tight">
     CONVERSATIONS
   </h2>
 </motion.div>
@@ -87,14 +88,15 @@ export default function Hero() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
           />
 
-          <motion.h1
-            className="conversations-heading font-resotho uppercase lg:tracking-[0.1em] tracking-[0.19em] text-right leading-snug md:leading-tight text-black"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
-          >
-            INFLUENCIAL VOICES
-          </motion.h1>
+        {/* INFLUENTIAL VOICES */}
+<motion.h1
+  className="conversations-heading font-resotho uppercase lg:tracking-[0.1em] tracking-[0.19em] text-right leading-tight text-black"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
+>
+  INFLUENTIAL VOICES
+</motion.h1>
         </div>
       </div>
       <div className="relative -mt-20 w-full h-[300px] sm:h-[400px] px-1 md:hidden">
