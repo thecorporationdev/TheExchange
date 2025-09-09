@@ -111,9 +111,16 @@ html {
 
 @media (min-width: 375px) {
   .conversations-heading {
+    font-size: 29px;
+  }
+}
+
+@media (min-width: 414px) {
+  .conversations-heading {
     font-size: 32px;
   }
 }
+
 
 @media (min-width: 425px) {
   .conversations-heading {
