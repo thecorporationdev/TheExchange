@@ -8,7 +8,7 @@ const WelcomeSection = () => {
           Welcome
         </p>
 
-        <h1 className="mt-[15px] ml-5 md:ml-0 md:mt-10 text-[27px] md:text-[36px] lg:text-[48px] font-medium text-gray-900 max-w-6xl text-left leading-[30px] md:leading-tight lg:leading-snug md:text-left mx-auto">
+        <h1 className="mt-[15px] ml-5 md:ml-0 md:mt-10 text-[27px] md:text-[36px] lg:text-[48px] font-medium text-gray-900 max-w-6xl text-left leading-[40px] md:leading-tight lg:leading-snug md:text-left mx-auto">
           For 10 years, our Montreal web design agency has been delivering powerful, tailor-made websites that help brands anchor their authority. Now, we&apos;re harnessing this cargo of expertise to propel your next project.
         </h1>
 

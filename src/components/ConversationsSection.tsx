@@ -9,7 +9,7 @@ export default function ConversationsSection() {
   CONVERSATIONS
 </h2>
 
-<h2 className="conversations-heading w-full text-center block md:hidden uppercase tracking-[0.16em] text-gray-900 mb-5 font-resotho">
+<h2 className="conversations-heading w-full text-LEFT block md:hidden uppercase tracking-[0.16em] text-gray-900 mb-5 font-resotho">
   CONVERSATIONS
 </h2>
 
