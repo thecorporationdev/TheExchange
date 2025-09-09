@@ -16,7 +16,7 @@ export default function ConversationsSection() {
 
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start">
           <div className="flex-1 text-center md:text-left">
-  <h3 className="text-[15px] sm:text-[24px] md:text-[30px] text-justify  uppercase lg:tracking-[0.1em] tracking-[0.3em] text-gray-900 mb-3 sm:mb-4 font-resotho">
+  <h3 className="text-[15px] sm:text-[24px] md:text-[30px] text-justify  uppercase lg:tracking-[0.1em] tracking-[0.1em] text-gray-900 mb-3 sm:mb-4 font-resotho">
     POLITICS
   </h3>
 

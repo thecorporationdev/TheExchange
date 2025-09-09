@@ -57,7 +57,7 @@ export default function PeopleSection() {
           <h2 className="hidden md:block uppercase text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 mb-5 lg:mb-8 sm:mb-12 font-resotho">
           PEOPLE
         </h2>
-        <h2 className="w-full  block md:hidden uppercase conversations-heading tracking-[0.16em] text-gray-900 mb-5 font-resotho">
+        <h2 className="w-full  block md:hidden uppercase conversations-heading tracking-[0.16em] text-gray-900 mb-12 font-resotho">
           PEOPLE
         </h2>
 
@@ -89,7 +89,7 @@ export default function PeopleSection() {
                   <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.16em] text-black font-resotho">
                     {person.name}
                   </p>
-                  <p className="text-[10px] md:text-[10px] font-medium uppercase tracking-wider text-black">
+                  <p className="text-[10px] md:text-[10px] font-bold uppercase tracking-wider text-black">
                     {person.title}
                   </p>
                 </div>

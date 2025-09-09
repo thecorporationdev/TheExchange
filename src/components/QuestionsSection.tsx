@@ -26,7 +26,7 @@ export default function QuestionsSection() {
 <h2 className="hidden md:block uppercase text-[24px] sm:text-[28px] md:text-[60px] lg:text-[70px] lg:tracking-[0.1em] tracking-[0.16em] text-gray-900 mb-5 lg:mb-8 sm:mb-12 font-resotho">
           QUESTIONS
         </h2>
-        <h2 className="w-full block md:hidden uppercase conversations-heading tracking-[0.16em] text-gray-900 mb-5 font-resotho">
+        <h2 className="w-full block md:hidden uppercase conversations-heading tracking-[0.16em] text-gray-900 mb-10 font-resotho">
           QUESTIONS
         </h2>
         
@@ -48,7 +48,7 @@ export default function QuestionsSection() {
               >
                 <span 
                 // className="text-[12px] md:text-[24px] font-semibold uppercase tracking-[0.06em] text-gray-900 font-resotho flex-1"
-                className="text-[15px] sm:text-[24px] md:text-[30px] uppercase tracking-[0.3em] text-gray-900 font-resotho flex-1"
+                className="text-[15px] sm:text-[24px] md:text-[30px] uppercase lg:tracking-[0.1em] tracking-[0.1em] text-gray-900 font-resotho flex-1"
                 >
                   {item.question}
                 </span>

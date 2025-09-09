@@ -8,7 +8,7 @@ export default function DemocracysSection() {
 
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="flex-1">
-            <h3 className="text-[15px] sm:text-[24px] md:text-[30px] uppercase tracking-[0.3em] text-gray-900 mb-4 font-resotho">
+            <h3 className="text-[15px] sm:text-[24px] md:text-[30px] uppercase lg:tracking-[0.1em] tracking-[0.1em] text-gray-900 mb-4 font-resotho">
               DEMOCRACY
             </h3>
             <div className="lg:w-[400px]">
