@@ -86,10 +86,10 @@ export default function PeopleSection() {
                     }`}
                 />
                 <div className="mt-1">
-                  <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.16em] text-black font-resotho">
+                  <p className="text-[12.5px] md:text-xs font-bold uppercase tracking-[0.16em] text-black font-resotho">
                     {person.name}
                   </p>
-                  <p className="text-[10px] md:text-[10px] font-bold uppercase tracking-wider text-black">
+                  <p className="text-[11.5px] md:text-[10px] font-bold uppercase tracking-wider text-black">
                     {person.title}
                   </p>
                 </div>

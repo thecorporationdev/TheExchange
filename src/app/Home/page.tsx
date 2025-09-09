@@ -31,6 +31,8 @@ const HomeScreen = () => {
         <div className="-mt-[30px] md:mt-0">
         <WelcomeSection />
         </div>
+        <div className="mt-[1.5px] md:mt-0">
+            </div>
         <PeopleSection />
         <QuestionsSection />
         <Footer />

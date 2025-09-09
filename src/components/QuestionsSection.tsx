@@ -48,7 +48,7 @@ export default function QuestionsSection() {
               >
                 <span 
                 // className="text-[12px] md:text-[24px] font-semibold uppercase tracking-[0.06em] text-gray-900 font-resotho flex-1"
-                className="text-[15px] sm:text-[24px] md:text-[30px] uppercase lg:tracking-[0.1em] tracking-[0.1em] text-gray-900 font-resotho flex-1"
+                className="text-[16.5px] sm:text-[24px] md:text-[30px] uppercase lg:tracking-[0.1em] tracking-[0.1em] text-gray-900 font-resotho flex-1"
                 >
                   {item.question}
                 </span>
@@ -91,7 +91,7 @@ export default function QuestionsSection() {
                     : "max-h-0 opacity-0"
                   }`}
               >
-                <p className="text-[16px] lg:text-[22px] leading-relaxed text-gray-700 max-w-[350px]">
+                <p className="text-[19px] lg:text-[22px] leading-relaxed text-gray-700 max-w-[350px]">
                   {item.answer}
                 </p>
               </div>

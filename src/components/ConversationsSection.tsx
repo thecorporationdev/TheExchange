@@ -16,12 +16,12 @@ export default function ConversationsSection() {
 
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start">
           <div className="flex-1 text-center md:text-left">
-  <h3 className="text-[15px] sm:text-[24px] md:text-[30px] text-justify  uppercase lg:tracking-[0.1em] tracking-[0.1em] text-gray-900 mb-3 sm:mb-4 font-resotho">
+  <h3 className="text-[16.5px] sm:text-[24px] md:text-[30px] text-justify  uppercase lg:tracking-[0.1em] tracking-[0.1em] text-gray-900 mb-3 sm:mb-4 font-resotho">
     POLITICS
   </h3>
 
   <div className="lg:w-[400px]">
-    <p className="text-[17.5px] lg:text-[22px] leading-relaxed text-gray-700 lg:text-left text-left sm:text-left">
+    <p className="text-[19px] lg:text-[22px] leading-relaxed text-gray-700 lg:text-left text-left sm:text-left">
       Design and development of a modern website to strengthen Kubota&apos;
       presence in Quebec. The platform is utilized by 17 dealers,
       featuring the seamless integration of API-driven data that
@@ -38,7 +38,7 @@ export default function ConversationsSection() {
               alt="Politics rally"
               width={800}
               height={500}
-              className=" object-cover w-full h-[220px] sm:h-[300px] md:h-auto"
+              className=" object-cover w-full h-full sm:h-[300px] md:h-auto"
             />
           </div>
         </div>
