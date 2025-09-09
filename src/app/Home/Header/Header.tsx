@@ -97,7 +97,7 @@ export default function Header() {
                 </button>
               </div>
               <nav className="flex font-resotho flex-col items-center space-y-6 p-8 text-lg font-medium">
-                {/* <a href="#" onClick={() => setOpen(false)}>Agence</a> */}
+                <a href="#" onClick={() => setOpen(false)}>PodCast</a>
                 {/* <a href="#" onClick={() => setOpen(false)}>Services</a>
                 <a href="#" onClick={() => setOpen(false)}>Projets</a>
                 <a href="#" onClick={() => setOpen(false)}>Clients</a>
