@@ -17,21 +17,21 @@ export default function Footer() {
         </div>
 
         <div className="tracking-wide text-white lg:space-y-3 space-y-0.5">
-          <p className="lg:text-[14px] text-[10px] uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
+          <p className="lg:text-[14px] font-bold text-[10px] uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
             Terms of Use
           </p>
           <div className="h-2 block md:hidden"></div>
 
-          <p className="lg:text-[14px] text-[10px] uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
+          <p className="lg:text-[14px] text-[10px] font-bold uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
             Privacy Policy
           </p>
           <div className="h-2 block md:hidden"></div>
-          <p className="lg:text-[14px] text-[10px] uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
+          <p className="lg:text-[14px] font-bold text-[10px] uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
             All Rights Reserved 2025 The Exchange Podcast
           </p>
           <div className="h-2 block md:hidden"></div>
 
-          <p className="lg:text-[14px] text-[10px] uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
+          <p className="lg:text-[14px] text-[10px] font-bold uppercase lg:tracking-[0.2em] tracking-[0.16em] font-resotho">
             Social Media
           </p>
           <div className="h-0.5 block md:hidden"></div>

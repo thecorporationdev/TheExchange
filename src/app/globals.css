@@ -105,19 +105,19 @@ html {
 
 @media (min-width: 320px) {
   .conversations-heading {
-    font-size: 24px;
+    font-size: 24.7px;
   }
 }
 
 @media (min-width: 375px) {
   .conversations-heading {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
 @media (min-width: 425px) {
   .conversations-heading {
-    font-size: 32.5px;
+    font-size: 33px;
   }
 }
 
